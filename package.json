@@ -1,0 +1,37 @@
+{
+	"name": "frankionary",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"@dimforge/rapier3d-compat": "^0.14.0",
+		"@studio-freight/lenis": "^1.0.42",
+		"@theatre/core": "^0.7.2",
+		"@theatre/studio": "^0.7.2",
+		"@threlte/core": "^7.3.1",
+		"@threlte/extras": "^8.11.5",
+		"@threlte/flex": "^1.0.3",
+		"@threlte/rapier": "^2.0.1",
+		"@threlte/theatre": "^2.1.8",
+		"@threlte/xr": "^0.1.4",
+		"lenis": "^1.1.9",
+		"lenis-svelte": "^0.2.0",
+		"three": "^0.167.1"
+	}
+}
