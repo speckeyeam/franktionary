@@ -13,10 +13,22 @@
   let scrollY = 0; // Store the scroll position
 
   let lenis;
-
+  const mapRange = (value, inMin, inMax, outMin, outMax) => {
+    return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
+  };
   onMount(() => {
     const handleScroll = () => {
       scrollY = window.scrollY; // Capture the vertical scroll position
+
+      const scrollPercent = mapRange(
+        scrollY,
+        0,
+        document.body.scrollHeight - window.innerHeight,
+        10,
+        0
+      );
+      const colorValue = Math.max(0, Math.min(10, Math.floor(scrollPercent))); // Clamp between 0 and 10
+      document.body.style.backgroundColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`; // Update background color
     };
 
     // Attach Lenis scroll event
@@ -68,7 +80,7 @@
 </h1>
 
 <div style="height:100vh"></div>
-<h1 style="color:white; text-align:center">"I've had longer" -Frank</h1>
+<h1 style="color:#E6E6E6; text-align:center">"I've had longer" -Frank</h1>
 <div style="height:30vh"></div>
 
 <style>
