@@ -7,8 +7,8 @@
 
   export const ref = new Group();
 
-  const gltf = useGltf("3d/cookie.glb");
-  const texture = useLoader(TextureLoader).load("3d/cookie.jpg");
+  const gltf = useGltf("models/cookie.glb");
+  const texture = useLoader(TextureLoader).load("models/cookie.jpg");
 
   const component = forwardEventHandlers();
 </script>
