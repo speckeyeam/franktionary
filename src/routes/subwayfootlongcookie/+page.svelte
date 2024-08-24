@@ -10,7 +10,7 @@
   import { useLoader } from "@threlte/core";
   import Cookie from "./cookie.svelte";
 
-  import { Gradient } from "./Gradient.ts";
+  import { Gradient } from "./gradient";
 
   // Create your instance
   const gradient = new Gradient();
@@ -167,7 +167,7 @@
     --gradient-color-1: #0f0f0f;
     --gradient-color-2: #000000;
     --gradient-color-3: #0e0e0e;
-    --gradient-color-4: #252525;
+    --gradient-color-4: #181818;
   }
   .title {
     font-family: "Work Sans", sans-serif;
